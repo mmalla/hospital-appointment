@@ -1,1 +1,3 @@
-### Hospital-Appointment
+# Hospital-Appointment
+
+To run the app
