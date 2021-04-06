@@ -19,10 +19,7 @@ const reducer = combineReducers({
 
 const persistedReducer = persistReducer(persistConfig, reducer);
 
-const store = createStore(
-  persistedReducer,
-  compose(applyMiddleware(...middleware), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
-);
+const store = createStore(persistedReducer, compose(applyMiddleware(...middleware)));
 
 export const persistor = persistStore(store);
 
