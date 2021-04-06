@@ -9,7 +9,9 @@ export const patientLogin = (credentials) => {
         resolve(res.data);
       })
       .catch((err) => {
-        reject(err.response.data);
+        if (err.response) {
+          reject(err.response.data);
+        } else reject();
       });
   });
 };
