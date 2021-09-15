@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 mongoose.connect(
-  "mongodb+srv://shantanu:Nz7j5Ywjc0OLx6Sk@hospital.wg1gr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "mongodb+srv://shantanu:N2l1Pnxb3q5aBfkK@hospital.wg1gr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
