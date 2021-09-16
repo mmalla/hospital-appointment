@@ -39,7 +39,6 @@ function PatientHomePage(props) {
       ...patientDetails,
       patientId: props.userDetails._id,
     };
-    console.log(patientDetails);
     bookAppointment(data)
       .then((res) => {
         setSlotList(res);
