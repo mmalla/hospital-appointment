@@ -1,1 +1,1 @@
-export const SERVER_URL = "https://34.82.54.157";
+export const SERVER_URL = "https://hospital-demo-server-shanptl12-hospital-demo.vercel.app";
