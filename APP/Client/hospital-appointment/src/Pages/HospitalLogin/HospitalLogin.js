@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import Header from "../../Components/LandingPageHeader/Header";
 import { useHistory } from "react-router-dom";
 import { MainCont, SignIn, LoginText } from "./HospitalLogin.styles";
-import { Error } from "../LandingPage/LandingPage.styles";
 import InputBoxes from "../../Components/InputBoxes/InputBoxes";
 import { connect } from "react-redux";
 import { LoginHospital } from "../../redux/actions/userActions";
 
 function HospitalLogin({ LoginHospital }) {
   const history = useHistory();
-  const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
 
   const handlePatientLoginClick = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderCont, Hospital, HospitalLogin, LogoImage } from "./Header.styles";
+import { HeaderCont, Hospital, LogoImage } from "./Header.styles";
 import { Button } from "../../Components/Buttons/Buttons.styles";
 import { useHistory } from "react-router";
 import Logo from "../../images/logo.png";

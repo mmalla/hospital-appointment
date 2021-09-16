@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Redirect, RouteProps, useLocation } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 
 function PrivateRoute({ Component, authenticated, ...rest }) {
