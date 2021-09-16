@@ -17,7 +17,7 @@ export const getSlotsList = (date) => {
 export const bookAppointment = (details) => {
   return new Promise((resolve, reject) => {
     axios
-      .post(SERVER_URL + "/appointments/patient", details)
+      .post(SERVER_URL + "/appointment/patient", details)
       .then((res) => {
         resolve(res.data);
       })
