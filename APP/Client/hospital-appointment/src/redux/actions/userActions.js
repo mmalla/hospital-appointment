@@ -5,6 +5,12 @@ export const Login = (credentials) => (dispatch) => {
   return new Promise((resolve, reject) => {
     patientLogin(credentials)
       .then((res) => {
+      window.zipy.identify(email, {
+        firstName : "Manisha",
+        lastName:  "Malla",
+        customerName: " Test Customer",
+        avatar : "http://general.com/avatar",
+        phone: "9911221234"
         dispatch({
           type: actionTypes.LOGIN,
           payload: res,
@@ -19,6 +25,7 @@ export const Login = (credentials) => (dispatch) => {
 };
 
 export const Logout = () => (dispatch) => {
+  window.zipy.anonymize();
   dispatch({
     type: actionTypes.LOGOUT,
   });
