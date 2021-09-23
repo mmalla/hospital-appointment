@@ -11,6 +11,7 @@ export const Login = (credentials) => (dispatch) => {
         customerName: " Test Customer",
         avatar : "http://general.com/avatar",
         phone: "9911221234"
+        });
         dispatch({
           type: actionTypes.LOGIN,
           payload: res,
