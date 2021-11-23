@@ -4,7 +4,7 @@ import Avatar from "../Avatar/Avatar";
 import Logo from "../../images/logo.png";
 
 function Header() {
-  console.error("stream not subscribed");
+  console.error("stream deleted");
   return (
     <HeaderCont>
       <Hospital>
