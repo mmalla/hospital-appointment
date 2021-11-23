@@ -30,7 +30,7 @@ export const bookAppointment = (details) => {
 export const getAppointments = (date) => {
   return new Promise((resolve, reject) => {
     axios
-      .get(SERVER_URL + "/appointments/hospitail/" + date)
+      .get(SERVER_URL + "/appointments/hospital/" + date)
       .then((res) => {
         resolve(res.data);
       })
