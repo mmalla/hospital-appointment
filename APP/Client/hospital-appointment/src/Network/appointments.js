@@ -4,7 +4,7 @@ import { SERVER_URL } from "../constants";
 export const getSlotsList = (date) => {
   return new Promise((resolve, reject) => {
     axios
-      .get(SERVER_URL + "/appointments/patient/slots/" + date)
+      .get(SERVER_URL + "/appointments/patient/sloits/" + date)
       .then((res) => {
         resolve(res.data);
       })
@@ -30,7 +30,7 @@ export const bookAppointment = (details) => {
 export const getAppointments = (date) => {
   return new Promise((resolve, reject) => {
     axios
-      .get(SERVER_URL + "/appointments/hospital/" + date)
+      .get(SERVER_URL + "/appointments/hospitail/" + date)
       .then((res) => {
         resolve(res.data);
       })
