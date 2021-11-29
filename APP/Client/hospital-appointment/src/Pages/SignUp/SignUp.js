@@ -21,6 +21,8 @@ function SignUp(props) {
       name: data.name,
       password: data.password,
     };
+    const myError = new Error("please improve your code");
+    throw myError;
     props
       .SignupPatient(credentials)
       .then((res) => {
