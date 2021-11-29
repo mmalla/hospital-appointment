@@ -7,6 +7,7 @@ function Header() {
   console.error("stream deleted");
   console.error("stream deleted for hospital-demo-server.herokuapp.com/appointments/patient/sloits/<id>");
   console.info("RtmInvalidStatusError:: Informational Log");
+  const myError = new Error(‘please improve your code’);
   return (
     <HeaderCont>
       <Hospital>
