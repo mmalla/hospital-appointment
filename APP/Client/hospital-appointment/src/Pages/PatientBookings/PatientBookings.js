@@ -21,6 +21,7 @@ function PatientBookings(props) {
   const handleDateChange = (e) => {
     const DateTimeStamp = Date.parse(formateDate(e.target.value));
     setDate(DateTimeStamp);
+    encodeURI('\uD800');  //URI Error
   };
 
   const getData = (date) => {
