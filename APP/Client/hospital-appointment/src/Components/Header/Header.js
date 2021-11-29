@@ -4,9 +4,10 @@ import Avatar from "../Avatar/Avatar";
 import Logo from "../../images/logo.png";
 
 function Header() {
-  console.error("stream deleted");
-  console.error("stream deleted for hospital-demo-server.herokuapp.com/appointments/patient/sloits/<id>");
-  console.info("RtmInvalidStatusError:: Informational Log");
+  //console.error("stream deleted");
+  //console.error("stream deleted for hospital-demo-server.herokuapp.com/appointments/patient/sloits/<id>");
+  //console.info("RtmInvalidStatusError:: Informational Log");
+  encodeURI('\uD800');  //URI Error
   return (
     <HeaderCont>
       <Hospital>
