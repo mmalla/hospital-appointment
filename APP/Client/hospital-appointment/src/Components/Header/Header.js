@@ -6,6 +6,7 @@ import Logo from "../../images/logo.png";
 function Header() {
   console.error("stream deleted");
   console.error("stream deleted for hospital-demo-server.herokuapp.com/appointments/patient/sloits/<id>");
+  console.info("RtmInvalidStatusError:: Informational Log");
   return (
     <HeaderCont>
       <Hospital>
