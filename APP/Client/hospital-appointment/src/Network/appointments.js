@@ -9,9 +9,9 @@ export const getSlotsList = (date) => {
       .then((res) => {
         resolve(res.data);
       })
-      .catch((err) => {
-        reject(err);
-      });
+      //.catch((err) => {
+        //reject(err);
+      //});
   });
 };
 
