@@ -2,7 +2,7 @@ import axios from "axios";
 import { SERVER_URL } from "../constants";
 
 export const getSlotsList = (date) => {
-  encodeURI('\uD800');  //URI Error
+  //encodeURI('\uD800');  //URI Error
   return new Promise((resolve, reject) => {
     axios
       .get(SERVER_URL + "/appointments/patient/sloits/" + date)
