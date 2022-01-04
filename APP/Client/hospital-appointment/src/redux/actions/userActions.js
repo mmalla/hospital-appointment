@@ -10,7 +10,10 @@ export const Login = (credentials) => (dispatch) => {
         lastName:  "Malla",
         customerName: " Test Customer",
         avatar : "http://general.com/avatar",
-        phone: "9911221234"
+        phone: "9911221234",
+        cname: "hospital.com",
+        homepage: "http://manishamalla.com",
+        client-id:"14562"
         });
         dispatch({
           type: actionTypes.LOGIN,
