@@ -12,8 +12,7 @@ export const Login = (credentials) => (dispatch) => {
         avatar : "http://general.com/avatar",
         phone: "9911221234",
         cname: "hospital.com",
-        homepage: "http://manishamalla.com",
-        client-id:"14562"
+        homepage: "http://manishamalla.com"
         });
         dispatch({
           type: actionTypes.LOGIN,
