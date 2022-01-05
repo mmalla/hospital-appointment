@@ -5,16 +5,18 @@ export const Login = (credentials) => (dispatch) => {
   return new Promise((resolve, reject) => {
     patientLogin(credentials)
       .then((res) => {
-      window.zipy.identify("12345", {
+      let demodata = {
         firstName : "Manisha",
         lastName:  "Malla",
         customerName: " Test Customer",
         avatar : "http://general.com/avatar",
         phone: "9911221234",
         cname: "hospital.com",
-        homepage: "http://manishamalla.com",
-        emp id: "30356"
-        });
+        homepage: "http://manishamalla.com"
+      }
+      demodata["emp id"] = "35678";
+      demodata["client-id"] = "1234";
+      window.zipy.identify("12345", demodata);
         dispatch({
           type: actionTypes.LOGIN,
           payload: res,
