@@ -12,7 +12,8 @@ export const Login = (credentials) => (dispatch) => {
         avatar : "http://general.com/avatar",
         phone: "9911221234",
         cname: "hospital.com",
-        homepage: "http://manishamalla.com"
+        homepage: "http://manishamalla.com",
+        genericData: "Should not see this"
       }
       demodata["emp id"] = "35678";
       demodata["client-id"] = "1234";
