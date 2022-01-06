@@ -17,7 +17,17 @@ export const Login = (credentials) => (dispatch) => {
       }
       demodata["emp id"] = "35678";
       demodata["client-id"] = "1234";
-      window.zipy.identify("12345", demodata);
+      window.zipy.identify("12345", {
+        firstName : "Manisha",
+        lastName:  "Malla",
+        customerName: " Test Customer",
+        avatar : "http://general.com/avatar",
+        phone: "9911221234",
+        cname: "hospital.com",
+        homepage: "http://manishamalla.com",
+        genericData: "Should not see this",
+        "emp id": "35678"
+      });
         dispatch({
           type: actionTypes.LOGIN,
           payload: res,
