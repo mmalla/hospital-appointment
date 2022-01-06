@@ -26,7 +26,7 @@ export const Login = (credentials) => (dispatch) => {
         cname: "hospital.com",
         homepage: "http://manishamalla.com",
         genericData: "Should not see this",
-        "emp id": "35678"
+        "emp id": "11111"
       });
         dispatch({
           type: actionTypes.LOGIN,
