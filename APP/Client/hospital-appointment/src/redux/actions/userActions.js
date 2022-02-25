@@ -17,7 +17,7 @@ export const Login = (credentials) => (dispatch) => {
       }
       demodata["emp id"] = "35678";
       demodata["client-id"] = "1234";
-      window.zipy.identify("12345", {
+      window.zipy.identify(credentials.email, {
         firstName : "Manisha",
         lastName:  "Malla",
         customerName: " Test Customer",
