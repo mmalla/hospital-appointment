@@ -43,7 +43,7 @@ export const Login = (credentials) => (dispatch) => {
 };
 
 export const Logout = () => (dispatch) => {
-  window.zipy.anonymize();
+  //window.zipy.anonymize();
   dispatch({
     type: actionTypes.LOGOUT,
   });
