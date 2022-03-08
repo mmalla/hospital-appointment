@@ -18,7 +18,7 @@ export const Login = (credentials) => (dispatch) => {
       demodata["emp id"] = "35678";
       demodata["client-id"] = "1234";
       var randnum = Math.floor(Math.random() * 10);
-      window.zipy.identify(randnum.toString() , {
+      window.zipy.identify(credentials.email , {
         firstName : "Manisha",
         lastName:  "Malla",
         customerName: " Test Customer",
