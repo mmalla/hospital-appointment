@@ -5,29 +5,9 @@ export const Login = (credentials) => (dispatch) => {
   return new Promise((resolve, reject) => {
     patientLogin(credentials)
       .then((res) => {
-      let demodata = {
-        firstName : "Manisha",
-        lastName:  "Malla",
-        customerName: " Test Customer",
-        avatar : "http://general.com/avatar",
-        phone: "9911221234",
-        cname: "hospital.com",
-        homepage: "http://manishamalla.com",
-        genericData: "Should not see this"
-      }
-      demodata["emp id"] = "35678";
-      demodata["client-id"] = "1234";
-      var randnum = Math.floor(Math.random() * 10);
       window.zipy.identify(credentials.email , {
-        firstName : "Manisha",
-        lastName:  "Malla",
-        customerName: " Test Customer",
-        avatar : "http://general.com/avatar",
-        phone: "9911221234",
-        cname: "hospital.com",
-        homepage: "http://manishamalla.com",
-        genericData: "Should not see this",
-        "emp id": "11111"
+        customerName: "Pixelphone Inc.",
+        phone: "202-555-0112",
       });
         dispatch({
           type: actionTypes.LOGIN,
