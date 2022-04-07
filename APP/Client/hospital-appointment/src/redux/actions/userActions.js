@@ -8,7 +8,8 @@ export const Login = (credentials) => (dispatch) => {
       window.zipy.identify(credentials.email, {
         customerName: "Pixelphone Inc.",
         phone: "202-555-0112",
-        age: "18"
+        age: "18",
+        firstName: "Jack"
       });
         dispatch({
           type: actionTypes.LOGIN,
