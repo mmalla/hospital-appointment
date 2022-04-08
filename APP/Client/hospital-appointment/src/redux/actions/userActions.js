@@ -5,11 +5,11 @@ export const Login = (credentials) => (dispatch) => {
   return new Promise((resolve, reject) => {
     patientLogin(credentials)
       .then((res) => {
-      window.zipy.identify("newtest", {
+      window.zipy.identify("newtest12", {
         customerName: "Pixelphone Inc.",
         phone: "202-555-0112",
-        age: "18",
-        firstName: "Jack"
+        firstName: "Jack",
+        lastName: "Mark"
       });
         dispatch({
           type: actionTypes.LOGIN,
