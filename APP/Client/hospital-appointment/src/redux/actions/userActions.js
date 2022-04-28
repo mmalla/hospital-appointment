@@ -5,7 +5,7 @@ export const Login = (credentials) => (dispatch) => {
   return new Promise((resolve, reject) => {
     patientLogin(credentials)
       .then((res) => {
-      window.zipy.identify(credentials.email, {
+      window.zipy.identify("test_enduserinfo", {
         customerName: "Pixelphone Inc.",
         phone: "202-555-0112",
         firstName: "Jack",
