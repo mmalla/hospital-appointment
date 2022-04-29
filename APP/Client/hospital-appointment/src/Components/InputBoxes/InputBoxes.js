@@ -24,6 +24,7 @@ function InputBoxes(props) {
   };
   return (
     <div style={{ width: "100%" }}>
+      <div class="loader"></div>
       <Text>Email</Text>
       <SignInInput type="text" onChange={(e) => setEmail(e.target.value)} />
       {props.signUp && (
