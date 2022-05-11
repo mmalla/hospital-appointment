@@ -40,6 +40,13 @@ function HospitalLogin({ LoginHospital }) {
           <InputBoxes onClick={handleLogin} loading={loading} />
         </SignIn>
       </MainCont>
+      <div><iframe src='/login' style={{
+            border: '5px solid gray',
+            borderRadius: '10px',
+            width: '90%',
+            height: '400px',
+            boxShadow: '2px 0px 10px 1px red'
+          }}/> </div>
     </div>
   );
 }
