@@ -5,7 +5,7 @@ export const getSlotsList = (date) => {
   //encodeURI('\uD800');  //URI Error
   return new Promise((resolve, reject) => {
     axios
-      .get(SERVER_URL + "/appointments/patient/sloits/" + date)
+      .get(SERVER_URL + "/appointments/2345/sloits/test/1234/" + date)
       .then((res) => {
         resolve(res.data);
       })
