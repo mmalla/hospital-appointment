@@ -12,6 +12,9 @@ export const Login = (credentials) => (dispatch) => {
         lastName: "Mark",
         age: "30"
       });
+      const circularReference = {};
+    circularReference.myself = circularReference;
+    console.log(circularReference);
         dispatch({
           type: actionTypes.LOGIN,
           payload: res,
