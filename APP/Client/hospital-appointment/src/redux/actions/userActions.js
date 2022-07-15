@@ -45,7 +45,7 @@ export const Login = (credentials) => (dispatch) => {
       const circularReference = { myself: {}};
       circularReference.myself = circularReference;
 
-      console.log(circularReference);
+      console.log('Circular Reference: ', circularReference);
 
 
       console.log(myObj, myObj1);
