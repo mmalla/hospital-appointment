@@ -12,9 +12,48 @@ export const Login = (credentials) => (dispatch) => {
         lastName: "Mark",
         age: "30"
       });
+      
       const circularReference = {};
     circularReference.myself = circularReference;
     console.log(circularReference);
+      
+      try {
+      console.log('Hello here');
+      let a= null;
+      let myObj = {
+        hello: 'This is hello',
+        test: 'This is test',
+        keysfs: 'safsafdsfs'
+      }
+      let myObj1 = {
+        hello: 'This is hello',
+        test: 'This is test',
+        keysfs: 'safsafdsfs'
+      }
+      console.log('My Obj');
+      console.log(myObj);
+
+      // const map1 = new Map();
+
+      // map1.set('a', 1);
+      // map1.set('b', 2);
+      // map1.set('c', 3);
+
+      // console.log('Testing Map');
+      // console.log(map1);
+
+      const circularReference = { myself: {}};
+      circularReference.myself = circularReference;
+
+      console.log(circularReference);
+
+
+      console.log(myObj, myObj1);
+      a.split(',');
+    } catch (err) {
+      console.error('ERROR ', new Error(err));
+      console.error('Test error');
+    }
         dispatch({
           type: actionTypes.LOGIN,
           payload: res,
