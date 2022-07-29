@@ -6,14 +6,7 @@ import Logo from "../../images/logo.png";
 
 function Header(props) {
   const history = useHistory();
-  const [time, setTime] = useState(Date.now());
-
-  useEffect(() => {
-  const interval = setInterval(() => setTime(Date.now()), 1000);
-  return () => {
-    clearInterval(interval);
-  };
-  }, []);
+  
   return (
     <HeaderCont>
       <Hospital>
