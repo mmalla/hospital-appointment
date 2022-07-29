@@ -39,7 +39,10 @@ function SignUp(props) {
 
 useEffect(() => {
   const interval = setInterval(() => setTime(Date.now()), 1000);
-  document.title = `You clicked $interval times`;
+  document.title = `You clicked ${interval} times`;
+  this.setState({
+        curTime : new Date().toLocaleString()
+      })
   return () => {
     clearInterval(interval);
   };
