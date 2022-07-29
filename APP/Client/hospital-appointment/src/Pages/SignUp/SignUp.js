@@ -35,17 +35,12 @@ function SignUp(props) {
       });
   };
   
-  const [time, setTime] = useState(Date.now());
 
 useEffect(() => {
-  const interval = setInterval(() => setTime(Date.now()), 1000);
-  document.title = `You clicked ${interval} times`;
-  this.setState({
-        curTime : new Date().toLocaleString()
-      })
-  return () => {
-    clearInterval(interval);
-  };
+  const interval = setInterval(() => {
+    console.log('This will run every second!');
+  }, 1000);
+  return () => clearInterval(interval);
 }, []);
 
   return (
