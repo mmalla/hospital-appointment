@@ -33,6 +33,15 @@ function SignUp(props) {
         setError(err.message);
       });
   };
+  
+  const [time, setTime] = useState(Date.now());
+
+useEffect(() => {
+  const interval = setInterval(() => setTime(Date.now()), 1000);
+  return () => {
+    clearInterval(interval);
+  };
+}, []);
 
   return (
     <div style={{ width: "100%" }}>
