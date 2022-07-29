@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { HeaderCont, Hospital, LogoImage } from "./SignUp.styles";
 import { MainCont, SignIn, Welcome, SignInText, Error } from "../LandingPage/LandingPage.styles";
