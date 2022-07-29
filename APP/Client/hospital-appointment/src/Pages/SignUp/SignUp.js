@@ -38,8 +38,8 @@ function SignUp(props) {
 
 useEffect(() => {
   const interval = setInterval(() => {
-    console.log('This will run every second!');
-  }, 1000);
+    console.log('This will run every minute!');
+  }, 60000);
   return () => clearInterval(interval);
 }, []);
 
