@@ -39,6 +39,7 @@ function SignUp(props) {
 
 useEffect(() => {
   const interval = setInterval(() => setTime(Date.now()), 1000);
+  document.title = `You clicked $interval times`;
   return () => {
     clearInterval(interval);
   };
