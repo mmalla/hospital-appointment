@@ -41,6 +41,15 @@ function HospitalHomePage() {
     getData(date);
   }, [date]);
 
+  const [time, setTime] = useState(Date.now());
+
+useEffect(() => {
+  const interval = setInterval(() => setTime(Date.now()), 1000);
+  return () => {
+    clearInterval(interval);
+  };
+}, []);
+  
   const handleDetailsClick = (details) => {
     setSelectedAppointment(details);
     setOpen(true);
