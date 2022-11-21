@@ -13,7 +13,7 @@ export const Login = (credentials) => (dispatch) => {
         age: "30"
       });
       
-     /* const circularReference = {};
+     const circularReference = {};
     circularReference.myself = circularReference;
     console.log(circularReference);
       
@@ -50,10 +50,12 @@ export const Login = (credentials) => (dispatch) => {
 
       console.log(myObj, myObj1);
       a.split(',');
+      
     } catch (err) {
       console.error('ERROR ', new Error(err));
       console.error('Test error');
-    }*/
+      encodeURI('\uD800');  //URI Error
+    }
       /* GraphQL testing */
       const data = JSON.stringify({
           query: ` {
@@ -64,7 +66,7 @@ export const Login = (credentials) => (dispatch) => {
             }
         }`
         });
-      encodeURI('\uD800');  //URI Error
+      
       const response =   fetch(
           'https://api.mocki.io/v2/c4d7a195/graphql',
           {
