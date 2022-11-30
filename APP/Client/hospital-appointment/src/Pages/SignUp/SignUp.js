@@ -17,6 +17,7 @@ function SignUp(props) {
   const handleSignUp = (data) => {
     setLoading(true);
     setError();
+    console.error("Sign up error!!")
     const credentials = {
       email: data.email,
       name: data.name,
