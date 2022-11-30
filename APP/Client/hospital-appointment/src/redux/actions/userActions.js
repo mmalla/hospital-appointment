@@ -5,10 +5,10 @@ export const Login = (credentials) => (dispatch) => {
   return new Promise((resolve, reject) => {
     patientLogin(credentials)
       .then((res) => {
-      window.zipy.identify("test_enduserinfo13", {
-        customerName: "Burberry Fashions Inc.",
+      window.zipy.identify("test_enduserinfo14", {
+        customerName: "Yellowpages Limited",
         phone: "202-555-0112",
-        firstName: "Dwayne the Rock",
+        firstName: "Peter",
         lastName: "Johnson",
         age: "30"
       });
